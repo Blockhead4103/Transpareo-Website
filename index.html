@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transpareo AG</title>
+    <title>Transpareo AG - Digitaler Produktpass und Kreislaufwirtschaft</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Transpareo AG bietet eine sofort verfügbare Lösung für den Digitalen Produktpass (DPP) in der DACH-Region. Steigern Sie Transparenz, Vertrauen und nachhaltiges Wachstum.">
+    <meta name="keywords" content="Digitaler Produktpass, DPP, Ökodesign-Verordnung, Transpareo, Kreislaufwirtschaft, QR-Code Lösung, Nachhaltigkeit, Schweiz">
     
-    <!-- Poppins Font for Logo -->
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Transpareo AG - Digitaler Produktpass, der heute funktioniert">
+    <meta property="og:description" content="Transpareo AG bietet eine sofort verfügbare Lösung für den Digitalen Produktpass (DPP) in der DACH-Region. Steigern Sie Transparenz, Vertrauen und nachhaltiges Wachstum.">
+    <meta property="og:url" content="https://www.transpareo.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Poppins Font for Logo (similar to Canva Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -33,6 +43,7 @@
             font-family: 'Poppins', sans-serif;
             font-size: 27px;
         }
+        /* Responsive font sizes */
         h1 {
             font-size: 20px;
         }
@@ -42,7 +53,102 @@
         p, label, input, textarea, button {
             font-size: 12px;
         }
+        @media (min-width: 640px) {
+            h1 {
+                font-size: 32px;
+            }
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+        }
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 48px;
+            }
+        }
+        
+        /* Mobile menu animation */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+        #mobile-menu.open {
+            transform: translateX(0);
+        }
     </style>
+    
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Transpareo AG",
+          "url": "https://www.transpareo.com",
+          "logo": "https://www.transpareo.com/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+41 79 299 66 31",
+            "contactType": "Anfragen"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Grabenstrasse 15a",
+            "addressLocality": "Baar",
+            "postalCode": "6340",
+            "addressCountry": "CH"
+          }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Was ist der Digitale Produktpass (DPP)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der Digitale Produktpass (DPP) ist ein digitaler Datensatz, der Informationen über ein Produkt enthält, wie z.B. Herkunft, Zusammensetzung, Reparaturfähigkeit und Recyclinganweisungen. Er soll die Transparenz in der Lieferkette erhöhen und die Kreislaufwirtschaft fördern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Welche Vorteile bringt der DPP für mein Unternehmen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der DPP ist eine Chance, nicht nur eine Last. Er ermöglicht Ihnen, das Vertrauen der Kunden zu stärken, die Markteinführung zu beschleunigen und Prozesse durch bessere Datentransparenz zu optimieren. Sie positionieren sich als Vorreiter in Sachen Nachhaltigkeit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Für welche Branchen ist der DPP relevant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der DPP betrifft eine Vielzahl von Branchen, von der Chemie-Industrie (Lacke, Farben) über elektronische Geräte (z.B. Batterien) bis hin zu Mode & Textilien."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wie kann Transpareo AG meinem Unternehmen helfen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Transpareo AG bietet eine sofort einsetzbare Lösung, die auf 12 Jahren Erfahrung mit QR-basierten Produkten basiert. Wir helfen Ihnen, die regulatorischen Anforderungen zu erfüllen und diese in einen strategischen Vorteil für Ihr Unternehmen zu verwandeln."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was sind die ersten Schritte zur Einführung eines DPP?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der erste Schritt ist eine unverbindliche Beratung, um Ihre spezifischen Bedürfnisse zu verstehen. Wir empfehlen ein unverbindliches Erstgespräch, um die Anforderungen zu klären und einen maßgeschneiderten Plan für die Implementierung der Lösung zu erstellen."
+              }
+            }
+          ]
+        }
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
     <!-- Header section -->
@@ -55,110 +161,234 @@
             
             <!-- Desktop Navigation Links -->
             <div class="hidden md:flex space-x-6">
-                <a href="#faqs" class="text-gray-800 hover:text-blue-600 transition duration-300">FAQs</a>
+                <a href="#" id="nav-home" class="text-gray-800 hover:text-blue-600 transition duration-300">Startseite</a>
+                <a href="#faqs-content" id="nav-faqs" class="text-gray-800 hover:text-blue-600 transition duration-300">FAQs</a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-600">
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
         </nav>
         
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm pb-4 px-4">
-            <a href="#faqs" class="block py-2 text-gray-800 hover:bg-gray-100 px-4 rounded-md">FAQs</a>
+        <!-- Mobile Menu (Hidden by default, slides in from left) -->
+        <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-xl z-40 p-6 md:hidden">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <a href="#" id="mobile-nav-home" class="block text-xl font-bold py-4 text-gray-800 hover:bg-gray-100 rounded-md">Startseite</a>
+            <a href="#faqs-content" id="mobile-nav-faqs" class="block text-xl font-bold py-4 text-gray-800 hover:bg-gray-100 rounded-md">FAQs</a>
         </div>
     </header>
 
-    <!-- Hero section -->
     <main class="content-bg">
-        <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
-            <div class="container mx-auto text-center">
-                <h1 class="font-extrabold leading-tight mb-4 text-white">Der Digitale Produktpass (DPP) ist die Zukunft. Transpareo AG bietet die Lösung, die heute funktioniert.</h1>
-                <p class="mb-8 max-w-2xl mx-auto">Wir helfen Unternehmen dabei, den DPP nicht als Last, sondern als Chance für Transparenz, Vertrauen und nachhaltiges Wachstum zu nutzen.</p>
-            </div>
-        </section>
-
-        <!-- FAQs section -->
-        <section id="faqs" class="py-20 px-4">
-            <div class="container mx-auto max-w-3xl">
-                <h2 class="font-bold text-center mb-12">FAQs zum Digitalen Produktpass (DPP)</h2>
-                <div class="space-y-4">
-                    <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                        <div class="accordion-header flex justify-between items-center">
-                            <h3 class="text-sm font-bold text-gray-800">Was ist der Digitale Produktpass (DPP)?</h3>
-                            <span class="accordion-icon transform transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                            </span>
+        <!-- Main page content container -->
+        <div id="homepage-content">
+            <!-- Hero section -->
+            <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
+                <div class="container mx-auto text-center">
+                    <h1 class="font-extrabold leading-tight mb-4 text-white text-4xl sm:text-5xl lg:text-6xl">Der Digitale Produktpass (DPP) ist die Zukunft. Transpareo AG bietet die Lösung, die heute funktioniert.</h1>
+                    <p class="mb-8 max-w-2xl mx-auto text-base sm:text-lg">Wir helfen Unternehmen dabei, den DPP nicht als Last, sondern als Chance für Transparenz, Vertrauen und nachhaltiges Wachstum zu nutzen.</p>
+                    <a href="#contact" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 text-sm">Jetzt Kontakt aufnehmen</a>
+                </div>
+            </section>
+    
+            <!-- Unique selling points section -->
+            <section id="features" class="py-20 px-4">
+                <div class="container mx-auto">
+                    <h2 class="font-bold text-center mb-12 text-3xl">Unser Alleinstellungsmerkmal</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Feature Card 1 -->
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Universalität</h3>
+                            <p class="text-gray-600 text-sm">Unsere Lösung ist nicht auf eine Branche beschränkt. Sie ist universell einsetzbar für den gesamten DACH-Raum und darüber hinaus.</p>
                         </div>
-                        <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                            Der Digitale Produktpass (DPP) ist ein digitaler Datensatz, der Informationen über ein Produkt enthält, wie z.B. Herkunft, Zusammensetzung, Reparaturfähigkeit und Recyclinganweisungen. Er soll die Transparenz in der Lieferkette erhöhen und die Kreislaufwirtschaft fördern.
+                        <!-- Feature Card 2 -->
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/><path d="M10 18a2 2 0 1 1 4 0"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Fundierte Erfahrung</h3>
+                            <p class="text-gray-600 text-sm">Seit 12 Jahren entwickeln wir erfolgreich QR-basierte Produktinformationslösungen. Mit über 100 zufriedenen Kunden haben wir die nötige Erfahrung.</p>
                         </div>
-                    </div>
-                    <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                        <div class="accordion-header flex justify-between items-center">
-                            <h3 class="text-sm font-bold text-gray-800">Welche Vorteile bringt der DPP für mein Unternehmen?</h3>
-                            <span class="accordion-icon transform transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                            </span>
+                        <!-- Feature Card 3 -->
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5A2 2 0 0 0 7 21c0 0 3.74-.5 5-2"/><path d="M10.5 9.5 14 6c5-5 5-5 5-5a1.5 1.5 0 0 1 1.5 1.5s0 0 0 0-5 0-5 5l-3.5 3.5L8 12 12 8l-1.5-1.5L8 12l-1.5-1.5L12 8Z"/><path d="M12 12 8 8"/><path d="M15 14c-.2-1-.7-1.7-1.5-2.5-.8-.8-1.5-1.3-2.5-1.5"/><path d="M9 18h6"/><path d="M10 22h4"/><path d="M10 18a2 2 0 1 1 4 0"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Technologische Vorreiterrolle</h3>
+                            <p class="text-gray-600 text-sm">Wir nutzen innovative Technologien wie NFTs und KI-gestützte Online-Umfragen, um tiefe Einblicke in Kundenbedürfnisse zu gewinnen.</p>
                         </div>
-                        <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                            Der DPP ist eine Chance, nicht nur eine Last. Er ermöglicht Ihnen, das Vertrauen der Kunden zu stärken, die Markteinführung zu beschleunigen und Prozesse durch bessere Datentransparenz zu optimieren. Sie positionieren sich als Vorreiter in Sachen Nachhaltigkeit.
+                        <!-- Feature Card 4 -->
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Zeit- und Investitionssicherheit</h3>
+                            <p class="text-gray-600 text-sm">Während andere noch entwickeln, bieten wir eine Lösung, die heute bereits funktioniert. Das gibt unseren Kunden die nötige Investitionssicherheit.</p>
                         </div>
-                    </div>
-                    <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                        <div class="accordion-header flex justify-between items-center">
-                            <h3 class="text-sm font-bold text-gray-800">Für welche Branchen ist der DPP relevant?</h3>
-                            <span class="accordion-icon transform transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                            </span>
-                        </div>
-                        <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                            Der DPP betrifft eine Vielzahl von Branchen, von der Chemie-Industrie (Lacke, Farben) über elektronische Geräte (z.B. Batterien) bis hin zu Mode & Textilien.
-                        </div>
-                    </div>
-                    <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                        <div class="accordion-header flex justify-between items-center">
-                            <h3 class="text-sm font-bold text-gray-800">Wie kann Transpareo AG meinem Unternehmen helfen?</h3>
-                            <span class="accordion-icon transform transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                            </span>
-                        </div>
-                        <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                            Transpareo AG bietet eine sofort einsetzbare Lösung, die auf 12 Jahren Erfahrung mit QR-basierten Produkten basiert. Wir helfen Ihnen, die regulatorischen Anforderungen zu erfüllen und diese in einen strategischen Vorteil für Ihr Unternehmen zu verwandeln.
-                        </div>
-                    </div>
-                    <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                        <div class="accordion-header flex justify-between items-center">
-                            <h3 class="text-sm font-bold text-gray-800">Was sind die ersten Schritte zur Einführung eines DPP?</h3>
-                            <span class="accordion-icon transform transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                            </span>
-                        </div>
-                        <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                            Der erste Schritt ist eine Analyse Ihrer spezifischen Bedürfnisse. Wir empfehlen ein unverbindliches Erstgespräch, um die Anforderungen zu klären und einen maßgeschneiderten Plan für die Implementierung der Lösung zu erstellen.
+                        <!-- Feature Card 5 -->
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Schweizer Qualitätsbewusstsein</h3>
+                            <p class="text-gray-600 text-sm">Als Schweizer Unternehmen stehen wir für höchste Qualität, Präzision und Zuverlässigkeit.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- QR code section -->
-        <section class="bg-gray-100 py-12 px-4 text-center">
-            <div class="container mx-auto">
-                <h2 class="font-bold mb-4 text-2xl">Unverbindliches Erstgespräch vereinbaren</h2>
-                <p class="text-lg text-gray-600 mb-8">Scannen Sie den QR-Code, um uns zu kontaktieren.</p>
-                <div class="flex justify-center">
-                    <img
-                        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.transpareo.com"
-                        alt="QR Code für Erstgespräch"
-                        class="rounded-lg shadow-lg"
-                    />
+            </section>
+    
+            <!-- Contact Form section -->
+            <section id="contact" class="py-20 px-4 bg-white">
+                <div class="container mx-auto max-w-2xl">
+                    <h2 class="font-bold text-center mb-12 text-3xl">Kontakt aufnehmen</h2>
+                    <div id="form-status-success" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-6 text-center text-sm">
+                        Ihre Anfrage wurde erfolgreich gesendet!
+                    </div>
+                    <div id="form-status-error" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6 text-center text-sm">
+                        Bitte füllen Sie alle Felder aus.
+                    </div>
+                    <div id="form-status-loading" class="hidden text-center text-blue-600 mb-6">
+                        <svg class="animate-spin h-5 w-5 mr-3 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Wird gesendet...
+                    </div>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block font-medium text-gray-700">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="email" class="block font-medium text-gray-700">E-Mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="message" class="block font-medium text-gray-700">Nachricht</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button
+                                type="submit"
+                                id="submit-button"
+                                class="inline-flex items-center justify-center px-6 py-3 border border-transparent font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send mr-2"><path d="m22 2-7 15-4-9-9-4 15-7Z"/><path d="M22 2 11 13"/></svg>
+                                Nachricht senden
+                            </button>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </section>
+            </section>
+    
+            <!-- QR code section -->
+            <section class="bg-gray-100 py-12 px-4 text-center">
+                <div class="container mx-auto">
+                    <h2 class="font-bold mb-4 text-3xl">Unverbindliches Erstgespräch vereinbaren</h2>
+                    <p class="mb-8 text-lg text-gray-600">Scannen Sie den QR-Code, um uns zu kontaktieren.</p>
+                    <div class="flex justify-center">
+                        <img
+                            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.transpareo.com"
+                            alt="QR Code zur Transpareo Website"
+                            class="rounded-lg shadow-lg"
+                        />
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FAQ page content container -->
+        <div id="faqs-content" class="hidden min-h-screen">
+            <section class="py-20 px-4">
+                <div class="container mx-auto max-w-3xl">
+                    <h2 class="font-bold text-center mb-12 text-3xl">FAQs zum Digitalen Produktpass (DPP)</h2>
+                    <div class="space-y-4">
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Was ist der Digitale Produktpass (DPP)?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Der Digitale Produktpass (DPP) ist ein digitaler Datensatz, der Informationen über ein Produkt enthält, wie z.B. Herkunft, Zusammensetzung, Reparaturfähigkeit und Recyclinganweisungen. Er soll die Transparenz in der Lieferkette erhöhen und die Kreislaufwirtschaft fördern.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Welche Vorteile bringt der DPP für mein Unternehmen?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Der DPP ist eine Chance, nicht nur eine Last. Er ermöglicht Ihnen, das Vertrauen der Kunden zu stärken, die Markteinführung zu beschleunigen und Prozesse durch bessere Datentransparenz zu optimieren. Sie positionieren sich als Vorreiter in Sachen Nachhaltigkeit.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Für welche Branchen ist der DPP relevant?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Der DPP betrifft eine Vielzahl von Branchen, von der Chemie-Industrie (Lacke, Farben) über elektronische Geräte (z.B. Batterien) bis hin zu Mode & Textilien.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Wie kann Transpareo AG meinem Unternehmen helfen?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Transpareo AG bietet eine sofort einsetzbare Lösung, die auf 12 Jahren Erfahrung mit QR-basierten Produkten basiert. Wir helfen Ihnen, die regulatorischen Anforderungen zu erfüllen und diese in einen strategischen Vorteil für Ihr Unternehmen zu verwandeln.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Was sind die ersten Schritte zur Einführung eines DPP?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Der erste Schritt ist eine unverbindliche Beratung, um Ihre spezifischen Bedürfnisse zu verstehen. Wir empfehlen ein unverbindliches Erstgespräch, um die Anforderungen zu klären und einen maßgeschneiderten Plan für die Implementierung der Lösung zu erstellen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer section -->
@@ -200,7 +430,52 @@
         
         // Mobile menu toggle logic
         document.getElementById('mobile-menu-button').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('open');
+        });
+
+        document.getElementById('close-mobile-menu').addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.remove('open');
+        });
+
+        // "Sub-page" navigation logic
+        const homepageContent = document.getElementById('homepage-content');
+        const faqsContent = document.getElementById('faqs-content');
+        const navHome = document.getElementById('nav-home');
+        const navFaqs = document.getElementById('nav-faqs');
+        const mobileNavHome = document.getElementById('mobile-nav-home');
+        const mobileNavFaqs = document.getElementById('mobile-nav-faqs');
+        
+        function showHomepage() {
+            homepageContent.classList.remove('hidden');
+            faqsContent.classList.add('hidden');
+            window.scrollTo(0, 0); // Scroll to top
+        }
+
+        function showFaqsPage() {
+            homepageContent.classList.add('hidden');
+            faqsContent.classList.remove('hidden');
+            window.scrollTo(0, 0); // Scroll to top
+        }
+
+        navHome.addEventListener('click', (e) => {
+            e.preventDefault();
+            showHomepage();
+        });
+        navFaqs.addEventListener('click', (e) => {
+            e.preventDefault();
+            showFaqsPage();
+        });
+        mobileNavHome.addEventListener('click', (e) => {
+            e.preventDefault();
+            showHomepage();
+            document.getElementById('mobile-menu').classList.remove('open');
+        });
+        mobileNavFaqs.addEventListener('click', (e) => {
+            e.preventDefault();
+            showFaqsPage();
+            document.getElementById('mobile-menu').classList.remove('open');
         });
 
         // Accordion functionality for FAQs
@@ -235,12 +510,31 @@
             const errorMessage = document.getElementById('form-status-error');
             const loadingMessage = document.getElementById('form-status-loading');
             const submitButton = document.getElementById('submit-button');
+            const navContact = document.getElementById('nav-home');
+            const mobileNavContact = document.getElementById('mobile-nav-home');
+
+            // Handle scroll to contact section
+            navContact.addEventListener('click', (e) => {
+                if(homepageContent.classList.contains('hidden')) {
+                    showHomepage();
+                }
+                setTimeout(() => {
+                    document.getElementById('contact').scrollIntoView();
+                }, 100);
+            });
+            mobileNavContact.addEventListener('click', (e) => {
+                if(homepageContent.classList.contains('hidden')) {
+                    showHomepage();
+                }
+                setTimeout(() => {
+                    document.getElementById('contact').scrollIntoView();
+                }, 100);
+            });
 
             if (form) {
                 form.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     
-                    // Show loading and hide messages
                     successMessage.style.display = 'none';
                     errorMessage.style.display = 'none';
                     loadingMessage.style.display = 'block';
@@ -257,7 +551,6 @@
                         return;
                     }
 
-                    // Simulate API call to Gemini
                     try {
                          let chatHistory = [];
                          chatHistory.push({ role: "user", parts: [{ text: `Simulate processing a contact form submission with the following details: Name: ${name}, Email: ${email}, Message: ${message}. Respond with a simple acknowledgment message.` }] });
@@ -273,7 +566,6 @@
                         
                         const result = await response.json();
                         
-                        // Wait a bit to simulate network latency
                         await new Promise(resolve => setTimeout(resolve, 1500));
                         
                         loadingMessage.style.display = 'none';
