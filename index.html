@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transpareo AG - Digitaler Produktpass und Kreislaufwirtschaft</title>
+    <title>Transpareo AG - Digitaler Produktpass</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Transpareo AG bietet eine sofort verfügbare Lösung für den Digitalen Produktpass (DPP) in der DACH-Region. Steigern Sie Transparenz, Vertrauen und nachhaltiges Wachstum.">
-    <meta name="keywords" content="Digitaler Produktpass, DPP, Ökodesign-Verordnung, Transpareo, Kreislaufwirtschaft, QR-Code Lösung, Nachhaltigkeit, Schweiz">
+    <!-- SEO Meta Tags - German -->
+    <meta id="meta-description-de" name="description" content="Transpareo AG bietet eine sofort verfügbare Lösung für den Digitalen Produktpass (DPP) in der DACH-Region. Steigern Sie Transparenz, Vertrauen und nachhaltiges Wachstum.">
+    <meta id="meta-keywords-de" name="keywords" content="Digitaler Produktpass, DPP, Ökodesign-Verordnung, Transpareo, Kreislaufwirtschaft, QR-Code Lösung, Nachhaltigkeit, Schweiz">
     
-    <!-- Open Graph Tags for Social Media -->
-    <meta property="og:title" content="Transpareo AG - Digitaler Produktpass, der heute funktioniert">
-    <meta property="og:description" content="Transpareo AG bietet eine sofort verfügbare Lösung für den Digitalen Produktpass (DPP) in der DACH-Region. Steigern Sie Transparenz, Vertrauen und nachhaltiges Wachstum.">
+    <!-- Open Graph Tags for Social Media - German -->
+    <meta id="og-title-de" property="og:title" content="Transpareo AG - Digitaler Produktpass, der heute funktioniert">
+    <meta id="og-description-de" property="og:description" content="Transpareo AG bietet eine sofort verfügbare Lösung für den Digitalen Produktpass (DPP) in der DACH-Region. Steigern Sie Transparenz, Vertrauen und nachhaltiges Wachstum.">
     <meta property="og:url" content="https://www.transpareo.com">
     <meta property="og:type" content="website">
     
@@ -43,7 +43,6 @@
             font-family: 'Poppins', sans-serif;
             font-size: 27px;
         }
-        /* Responsive font sizes */
         h1 {
             font-size: 20px;
         }
@@ -80,7 +79,7 @@
     </style>
     
     <!-- JSON-LD Structured Data for SEO -->
-    <script type="application/ld+json">
+    <script id="json-ld" type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "Organization",
@@ -101,54 +100,6 @@
           }
         }
     </script>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Was ist der Digitale Produktpass (DPP)?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Der Digitale Produktpass (DPP) ist ein digitaler Datensatz, der Informationen über ein Produkt enthält, wie z.B. Herkunft, Zusammensetzung, Reparaturfähigkeit und Recyclinganweisungen. Er soll die Transparenz in der Lieferkette erhöhen und die Kreislaufwirtschaft fördern."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Welche Vorteile bringt der DPP für mein Unternehmen?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Der DPP ist eine Chance, nicht nur eine Last. Er ermöglicht Ihnen, das Vertrauen der Kunden zu stärken, die Markteinführung zu beschleunigen und Prozesse durch bessere Datentransparenz zu optimieren. Sie positionieren sich als Vorreiter in Sachen Nachhaltigkeit."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Für welche Branchen ist der DPP relevant?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Der DPP betrifft eine Vielzahl von Branchen, von der Chemie-Industrie (Lacke, Farben) über elektronische Geräte (z.B. Batterien) bis hin zu Mode & Textilien."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Wie kann Transpareo AG meinem Unternehmen helfen?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Transpareo AG bietet eine sofort einsetzbare Lösung, die auf 12 Jahren Erfahrung mit QR-basierten Produkten basiert. Wir helfen Ihnen, die regulatorischen Anforderungen zu erfüllen und diese in einen strategischen Vorteil für Ihr Unternehmen zu verwandeln."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Was sind die ersten Schritte zur Einführung eines DPP?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Der erste Schritt ist eine unverbindliche Beratung, um Ihre spezifischen Bedürfnisse zu verstehen. Wir empfehlen ein unverbindliches Erstgespräch, um die Anforderungen zu klären und einen maßgeschneiderten Plan für die Implementierung der Lösung zu erstellen."
-              }
-            }
-          ]
-        }
-    </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
     <!-- Header section -->
@@ -159,10 +110,13 @@
                 <span style="color: #007BFF;">Trans</span><span style="color: #28A745;">pa</span><span style="color: #7100FF;">reo</span><span class="text-gray-800"> ag</span>
             </a>
             
-            <!-- Desktop Navigation Links -->
-            <div class="hidden md:flex space-x-6">
-                <a href="#" id="nav-home" class="text-gray-800 hover:text-blue-600 transition duration-300">Startseite</a>
-                <a href="#faqs-content" id="nav-faqs" class="text-gray-800 hover:text-blue-600 transition duration-300">FAQs</a>
+            <!-- Language Switcher and Desktop Navigation Links -->
+            <div class="flex items-center space-x-6">
+                <button id="lang-toggle" class="text-gray-800 font-bold hover:text-blue-600 transition duration-300">EN</button>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" id="nav-home" class="text-gray-800 hover:text-blue-600 transition duration-300">Startseite</a>
+                    <a href="#faqs-content" id="nav-faqs" class="text-gray-800 hover:text-blue-600 transition duration-300">FAQs</a>
+                </div>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -186,8 +140,8 @@
     </header>
 
     <main class="content-bg">
-        <!-- Main page content container -->
-        <div id="homepage-content">
+        <!-- Main page content container - German -->
+        <div id="de-content">
             <!-- Hero section -->
             <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
                 <div class="container mx-auto text-center">
@@ -202,7 +156,6 @@
                 <div class="container mx-auto">
                     <h2 class="font-bold text-center mb-12 text-3xl">Unser Alleinstellungsmerkmal</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Feature Card 1 -->
                         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
                             <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
@@ -210,7 +163,6 @@
                             <h3 class="font-bold mb-2 text-gray-800 text-base">Universalität</h3>
                             <p class="text-gray-600 text-sm">Unsere Lösung ist nicht auf eine Branche beschränkt. Sie ist universell einsetzbar für den gesamten DACH-Raum und darüber hinaus.</p>
                         </div>
-                        <!-- Feature Card 2 -->
                         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
                             <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/><path d="M10 18a2 2 0 1 1 4 0"/></svg>
@@ -218,7 +170,6 @@
                             <h3 class="font-bold mb-2 text-gray-800 text-base">Fundierte Erfahrung</h3>
                             <p class="text-gray-600 text-sm">Seit 12 Jahren entwickeln wir erfolgreich QR-basierte Produktinformationslösungen. Mit über 100 zufriedenen Kunden haben wir die nötige Erfahrung.</p>
                         </div>
-                        <!-- Feature Card 3 -->
                         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
                             <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5A2 2 0 0 0 7 21c0 0 3.74-.5 5-2"/><path d="M10.5 9.5 14 6c5-5 5-5 5-5a1.5 1.5 0 0 1 1.5 1.5s0 0 0 0-5 0-5 5l-3.5 3.5L8 12 12 8l-1.5-1.5L8 12l-1.5-1.5L12 8Z"/><path d="M12 12 8 8"/><path d="M15 14c-.2-1-.7-1.7-1.5-2.5-.8-.8-1.5-1.3-2.5-1.5"/><path d="M9 18h6"/><path d="M10 22h4"/><path d="M10 18a2 2 0 1 1 4 0"/></svg>
@@ -226,7 +177,6 @@
                             <h3 class="font-bold mb-2 text-gray-800 text-base">Technologische Vorreiterrolle</h3>
                             <p class="text-gray-600 text-sm">Wir nutzen innovative Technologien wie NFTs und KI-gestützte Online-Umfragen, um tiefe Einblicke in Kundenbedürfnisse zu gewinnen.</p>
                         </div>
-                        <!-- Feature Card 4 -->
                         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
                             <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -234,7 +184,6 @@
                             <h3 class="font-bold mb-2 text-gray-800 text-base">Zeit- und Investitionssicherheit</h3>
                             <p class="text-gray-600 text-sm">Während andere noch entwickeln, bieten wir eine Lösung, die heute bereits funktioniert. Das gibt unseren Kunden die nötige Investitionssicherheit.</p>
                         </div>
-                        <!-- Feature Card 5 -->
                         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
                             <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -250,13 +199,13 @@
             <section id="contact" class="py-20 px-4 bg-white">
                 <div class="container mx-auto max-w-2xl">
                     <h2 class="font-bold text-center mb-12 text-3xl">Kontakt aufnehmen</h2>
-                    <div id="form-status-success" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-6 text-center text-sm">
+                    <div id="form-status-success-de" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-6 text-center text-sm">
                         Ihre Anfrage wurde erfolgreich gesendet!
                     </div>
-                    <div id="form-status-error" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6 text-center text-sm">
+                    <div id="form-status-error-de" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6 text-center text-sm">
                         Bitte füllen Sie alle Felder aus.
                     </div>
-                    <div id="form-status-loading" class="hidden text-center text-blue-600 mb-6">
+                    <div id="form-status-loading-de" class="hidden text-center text-blue-600 mb-6">
                         <svg class="animate-spin h-5 w-5 mr-3 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                           <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                           <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -268,7 +217,7 @@
                             <label for="name" class="block font-medium text-gray-700">Name</label>
                             <input
                                 type="text"
-                                id="name"
+                                id="name-de"
                                 name="name"
                                 class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                                 required
@@ -278,7 +227,7 @@
                             <label for="email" class="block font-medium text-gray-700">E-Mail</label>
                             <input
                                 type="email"
-                                id="email"
+                                id="email-de"
                                 name="email"
                                 class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                                 required
@@ -287,7 +236,7 @@
                         <div>
                             <label for="message" class="block font-medium text-gray-700">Nachricht</label>
                             <textarea
-                                id="message"
+                                id="message-de"
                                 name="message"
                                 rows="4"
                                 class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
@@ -297,7 +246,7 @@
                         <div class="text-center">
                             <button
                                 type="submit"
-                                id="submit-button"
+                                id="submit-button-de"
                                 class="inline-flex items-center justify-center px-6 py-3 border border-transparent font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send mr-2"><path d="m22 2-7 15-4-9-9-4 15-7Z"/><path d="M22 2 11 13"/></svg>
@@ -324,8 +273,8 @@
             </section>
         </div>
 
-        <!-- FAQ page content container -->
-        <div id="faqs-content" class="hidden min-h-screen">
+        <!-- FAQ page content container - German -->
+        <div id="faqs-content-de" class="hidden min-h-screen">
             <section class="py-20 px-4">
                 <div class="container mx-auto max-w-3xl">
                     <h2 class="font-bold text-center mb-12 text-3xl">FAQs zum Digitalen Produktpass (DPP)</h2>
@@ -389,6 +338,271 @@
                 </div>
             </section>
         </div>
+        
+        <!-- Main page content container - English (initially hidden) -->
+        <div id="en-content" class="hidden">
+            <!-- Hero section -->
+            <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
+                <div class="container mx-auto text-center">
+                    <h1 class="font-extrabold leading-tight mb-4 text-white text-4xl sm:text-5xl lg:text-6xl">The Digital Product Passport (DPP) is the future. Transpareo AG offers the solution that works today.</h1>
+                    <p class="mb-8 max-w-2xl mx-auto text-base sm:text-lg">We help companies turn the DPP from a burden into an opportunity for transparency, trust, and sustainable growth.</p>
+                    <a href="#contact" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 text-sm">Contact Us Now</a>
+                </div>
+            </section>
+    
+            <!-- Unique selling points section -->
+            <section id="features-en" class="py-20 px-4">
+                <div class="container mx-auto">
+                    <h2 class="font-bold text-center mb-12 text-3xl">Our Unique Selling Proposition</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Universality</h3>
+                            <p class="text-gray-600 text-sm">Our solution is not limited to a single industry. It is universally applicable for the entire DACH region and beyond.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/><path d="M10 18a2 2 0 1 1 4 0"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Profound Experience</h3>
+                            <p class="text-gray-600 text-sm">For 12 years, we have successfully developed QR-based product information solutions. With over 100 satisfied clients, we have the necessary experience to master this challenge.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5A2 2 0 0 0 7 21c0 0 3.74-.5 5-2"/><path d="M10.5 9.5 14 6c5-5 5-5 5-5a1.5 1.5 0 0 1 1.5 1.5s0 0 0 0-5 0-5 5l-3.5 3.5L8 12 12 8l-1.5-1.5L8 12l-1.5-1.5L12 8Z"/><path d="M12 12 8 8"/><path d="M15 14c-.2-1-.7-1.7-1.5-2.5-.8-.8-1.5-1.3-2.5-1.5"/><path d="M9 18h6"/><path d="M10 22h4"/><path d="M10 18a2 2 0 1 1 4 0"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Technological Leadership</h3>
+                            <p class="text-gray-600 text-sm">We don't just focus on compliance. We use innovative technologies like NFTs and AI-powered online surveys to gain deep insights into customer needs and increase engagement.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Time and Investment Security</h3>
+                            <p class="text-gray-600 text-sm">While others are still developing, we offer a solution that works today. This gives our clients the necessary investment security in a dynamic market.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg transition-transform transform hover:scale-105">
+                            <div class="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <h3 class="font-bold mb-2 text-gray-800 text-base">Swiss Quality Consciousness</h3>
+                            <p class="text-gray-600 text-sm">As a Swiss company, we stand for the highest quality, precision, and reliability.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contact Form section -->
+            <section id="contact-en" class="py-20 px-4 bg-white">
+                <div class="container mx-auto max-w-2xl">
+                    <h2 class="font-bold text-center mb-12 text-3xl">Contact Us</h2>
+                    <div id="form-status-success-en" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-6 text-center text-sm">
+                        Your request has been sent successfully!
+                    </div>
+                    <div id="form-status-error-en" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6 text-center text-sm">
+                        Please fill out all fields.
+                    </div>
+                    <div id="form-status-loading-en" class="hidden text-center text-blue-600 mb-6">
+                        <svg class="animate-spin h-5 w-5 mr-3 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Sending...
+                    </div>
+                    <form id="contact-form-en" class="space-y-6">
+                        <div>
+                            <label for="name" class="block font-medium text-gray-700">Name</label>
+                            <input
+                                type="text"
+                                id="name-en"
+                                name="name"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="email" class="block font-medium text-gray-700">Email</label>
+                            <input
+                                type="email"
+                                id="email-en"
+                                name="email"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="message" class="block font-medium text-gray-700">Message</label>
+                            <textarea
+                                id="message-en"
+                                name="message"
+                                rows="4"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button
+                                type="submit"
+                                id="submit-button-en"
+                                class="inline-flex items-center justify-center px-6 py-3 border border-transparent font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send mr-2"><path d="m22 2-7 15-4-9-9-4 15-7Z"/><path d="M22 2 11 13"/></svg>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+    
+            <!-- QR code section -->
+            <section class="bg-gray-100 py-12 px-4 text-center">
+                <div class="container mx-auto">
+                    <h2 class="font-bold mb-4 text-3xl">Arrange a non-binding consultation</h2>
+                    <p class="mb-8 text-lg text-gray-600">Scan the QR code to contact us.</p>
+                    <div class="flex justify-center">
+                        <img
+                            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.transpareo.com"
+                            alt="QR code to the Transpareo website"
+                            class="rounded-lg shadow-lg"
+                        />
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FAQ page content container - German -->
+        <div id="faqs-content-de" class="hidden min-h-screen">
+            <section class="py-20 px-4">
+                <div class="container mx-auto max-w-3xl">
+                    <h2 class="font-bold text-center mb-12 text-3xl">FAQs zum Digitalen Produktpass (DPP)</h2>
+                    <div class="space-y-4">
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Was ist der Digitale Produktpass (DPP)?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Der Digitale Produktpass (DPP) ist ein digitaler Datensatz, der Informationen über ein Produkt enthält, wie z.B. Herkunft, Zusammensetzung, Reparaturfähigkeit und Recyclinganweisungen. Er soll die Transparenz in der Lieferkette erhöhen und die Kreislaufwirtschaft fördern.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Welche Vorteile bringt der DPP für mein Unternehmen?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Der DPP ist eine Chance, nicht nur eine Last. Er ermöglicht Ihnen, das Vertrauen der Kunden zu stärken, die Markteinführung zu beschleunigen und Prozesse durch bessere Datentransparenz zu optimieren. Sie positionieren sich als Vorreiter in Sachen Nachhaltigkeit.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Für welche Branchen ist der DPP relevant?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Der DPP betrifft eine Vielzahl von Branchen, von der Chemie-Industrie (Lacke, Farben) über elektronische Geräte (z.B. Batterien) bis hin zu Mode & Textilien.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Wie kann Transpareo AG meinem Unternehmen helfen?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Transpareo AG bietet eine sofort einsetzbare Lösung, die auf 12 Jahren Erfahrung mit QR-basierten Produkten basiert. Wir helfen Ihnen, die regulatorischen Anforderungen zu erfüllen und diese in einen strategischen Vorteil für Ihr Unternehmen zu verwandeln.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Was sind die ersten Schritte zur Einführung eines DPP?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Der erste Schritt ist eine unverbindliche Beratung, um Ihre spezifischen Bedürfnisse zu verstehen. Wir empfehlen ein unverbindliches Erstgespräch, um die Anforderungen zu klären und einen maßgeschneiderten Plan für die Implementierung der Lösung zu erstellen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FAQ page content container - English (initially hidden) -->
+        <div id="faqs-content-en" class="hidden min-h-screen">
+            <section class="py-20 px-4">
+                <div class="container mx-auto max-w-3xl">
+                    <h2 class="font-bold text-center mb-12 text-3xl">FAQs about the Digital Product Passport (DPP)</h2>
+                    <div class="space-y-4">
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">What is the Digital Product Passport (DPP)?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                The Digital Product Passport (DPP) is a digital data record that contains information about a product, such as its origin, composition, repairability, and recycling instructions. It aims to increase transparency in the supply chain and promote the circular economy.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">What are the benefits of the DPP for my company?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                The DPP is an opportunity, not just a burden. It allows you to strengthen customer trust, accelerate product launches, and optimize your processes through better data transparency. It's a chance to position yourself as a leader in sustainability.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">Which industries are affected by the DPP?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                The DPP affects a wide range of industries, from the chemical industry (paints, dyes) and electronic devices (e.g., batteries) to fashion & textiles.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">How can Transpareo AG help my company?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                Transpareo AG offers a ready-to-use solution based on 12 years of experience with QR-based products. We help you meet regulatory requirements and turn them into a strategic advantage for your company.
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
+                            <div class="accordion-header flex justify-between items-center">
+                                <h3 class="font-bold text-gray-800 text-sm">What are the first steps to implementing a DPP?</h3>
+                                <span class="accordion-icon transform transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </span>
+                            </div>
+                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
+                                The first step is a non-binding consultation to understand your specific needs. We recommend an initial consultation to clarify the requirements and create a tailored plan for implementing the solution that will make your company future-proof.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer section -->
@@ -402,24 +616,24 @@
                 <div class="flex flex-col space-y-2">
                     <div class="flex items-center justify-center md:justify-start">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin mr-2"><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/><circle cx="12" cy="10" r="3"/></svg>
-                        <p>Transpareo AG, Grabenstrasse 15a, CH 6340 Baar/ZG, Switzerland</p>
+                        <p id="footer-address">Transpareo AG, Grabenstrasse 15a, CH 6340 Baar/ZG, Switzerland</p>
                     </div>
                     <div class="flex items-center justify-center md:justify-start">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone mr-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2.06l-4.2-1.68a2 2 0 0 1-1.16-.61l-5.61-5.61a2 2 0 0 1-.61-1.16l-1.68-4.2a2 2 0 0 1 2.06-2.18h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H9.5a1 1 0 0 0-1 1l-.22 2.2a1 1 0 0 0 .54 1.09l4.5 2.25a1 1 0 0 0 1.09-.54l.22-2.2a1 1 0 0 0-1-1H14a2 2 0 0 1 2-2v3a2 2 0 0 1 2 2h3a2 2 0 0 1 2 2Z"/></svg>
-                        <p>+41 79 299 66 31</p>
+                        <p id="footer-phone">+41 79 299 66 31</p>
                     </div>
                     <div class="flex items-center justify-center md:justify-start">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail mr-2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
-                        <a href="mailto:office@transpareo.com" class="hover:underline">office@transpareo.com</a>
+                        <a href="mailto:office@transpareo.com" class="hover:underline" id="footer-email">office@transpareo.com</a>
                     </div>
                     <div class="flex items-center justify-center md:justify-start">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe mr-2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-                        <a href="https://www.transpareo.com" target="_blank" rel="noopener noreferrer" class="hover:underline">www.transpareo.com</a>
+                        <a href="https://www.transpareo.com" target="_blank" rel="noopener noreferrer" class="hover:underline" id="footer-website">www.transpareo.com</a>
                     </div>
                 </div>
             </div>
             <div class="text-center pt-6 border-t border-gray-700">
-                <p class="text-sm">© <span id="current-year"></span> Transpareo ag. Alle Rechte vorbehalten.</p>
+                <p class="text-sm">© <span id="current-year"></span> <span id="footer-company-name">Transpareo ag</span>. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>
@@ -439,21 +653,95 @@
             mobileMenu.classList.remove('open');
         });
 
-        // "Sub-page" navigation logic
-        const homepageContent = document.getElementById('homepage-content');
-        const faqsContent = document.getElementById('faqs-content');
+        // Language toggle logic
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const deContent = document.getElementById('de-content');
+        const enContent = document.getElementById('en-content');
+        const deFaqsContent = document.getElementById('faqs-content-de');
+        const enFaqsContent = document.getElementById('faqs-content-en');
+        const langToggle = document.getElementById('lang-toggle');
         const navHome = document.getElementById('nav-home');
         const navFaqs = document.getElementById('nav-faqs');
         const mobileNavHome = document.getElementById('mobile-nav-home');
         const mobileNavFaqs = document.getElementById('mobile-nav-faqs');
+        const pageTitle = document.querySelector('title');
+
+        let isEnglish = false;
+
+        function updateLangUI() {
+            if (isEnglish) {
+                document.documentElement.lang = 'en';
+                langToggle.textContent = 'DE';
+                // Update navigation text
+                navHome.textContent = 'Homepage';
+                navFaqs.textContent = 'FAQs';
+                mobileNavHome.textContent = 'Homepage';
+                mobileNavFaqs.textContent = 'FAQs';
+                pageTitle.textContent = 'Transpareo AG - Digital Product Passport';
+                // Show English content, hide German
+                deContent.classList.add('hidden');
+                enContent.classList.remove('hidden');
+                // Check which subpage is active and show corresponding language content
+                if (deFaqsContent.classList.contains('active-page')) {
+                    deFaqsContent.classList.remove('active-page');
+                    deFaqsContent.classList.add('hidden');
+                    enFaqsContent.classList.add('active-page');
+                    enFaqsContent.classList.remove('hidden');
+                } else {
+                    enFaqsContent.classList.add('hidden');
+                }
+            } else {
+                document.documentElement.lang = 'de';
+                langToggle.textContent = 'EN';
+                // Update navigation text
+                navHome.textContent = 'Startseite';
+                navFaqs.textContent = 'FAQs';
+                mobileNavHome.textContent = 'Startseite';
+                mobileNavFaqs.textContent = 'FAQs';
+                pageTitle.textContent = 'Transpareo AG - Digitaler Produktpass';
+                // Show German content, hide English
+                enContent.classList.add('hidden');
+                deContent.classList.remove('hidden');
+                // Check which subpage is active and show corresponding language content
+                if (enFaqsContent.classList.contains('active-page')) {
+                    enFaqsContent.classList.remove('active-page');
+                    enFaqsContent.classList.add('hidden');
+                    deFaqsContent.classList.add('active-page');
+                    deFaqsContent.classList.remove('hidden');
+                } else {
+                    deFaqsContent.classList.add('hidden');
+                }
+            }
+        }
         
+        langToggleBtn.addEventListener('click', () => {
+            isEnglish = !isEnglish;
+            updateLangUI();
+        });
+
+
+        // "Sub-page" navigation logic
         function showHomepage() {
+            if (isEnglish) {
+                enContent.classList.remove('hidden');
+                enFaqsContent.classList.add('hidden');
+            } else {
+                deContent.classList.remove('hidden');
+                deFaqsContent.classList.add('hidden');
+            }
             homepageContent.classList.remove('hidden');
             faqsContent.classList.add('hidden');
             window.scrollTo(0, 0); // Scroll to top
         }
 
         function showFaqsPage() {
+            if (isEnglish) {
+                enFaqsContent.classList.remove('hidden');
+                enContent.classList.add('hidden');
+            } else {
+                deFaqsContent.classList.remove('hidden');
+                deContent.classList.add('hidden');
+            }
             homepageContent.classList.add('hidden');
             faqsContent.classList.remove('hidden');
             window.scrollTo(0, 0); // Scroll to top
@@ -477,6 +765,21 @@
             showFaqsPage();
             document.getElementById('mobile-menu').classList.remove('open');
         });
+        
+        // Dynamic footer content based on language
+        function updateFooter(isEnglish) {
+            const footerCompanyName = document.getElementById('footer-company-name');
+            footerCompanyName.textContent = isEnglish ? 'Transpareo ag' : 'Transpareo ag'; // Name remains the same
+            
+            const footerAddress = document.getElementById('footer-address');
+            footerAddress.textContent = isEnglish ? 'Transpareo AG, Grabenstrasse 15a, CH 6340 Baar/ZG, Switzerland' : 'Transpareo AG, Grabenstrasse 15a, CH 6340 Baar/ZG, Switzerland';
+            
+            // ... other footer content updates if needed
+        }
+        
+        // Initial setup
+        updateLangUI();
+        updateFooter(isEnglish);
 
         // Accordion functionality for FAQs
         const accordionItems = document.querySelectorAll('.accordion-item');
@@ -506,31 +809,27 @@
         // Form submission logic to Gemini API
         document.addEventListener('DOMContentLoaded', () => {
             const form = document.getElementById('contact-form');
-            const successMessage = document.getElementById('form-status-success');
-            const errorMessage = document.getElementById('form-status-error');
-            const loadingMessage = document.getElementById('form-status-loading');
-            const submitButton = document.getElementById('submit-button');
+            const successMessage = document.getElementById('form-status-success-de');
+            const errorMessage = document.getElementById('form-status-error-de');
+            const loadingMessage = document.getElementById('form-status-loading-de');
+            const submitButton = document.getElementById('submit-button-de');
             const navContact = document.getElementById('nav-home');
             const mobileNavContact = document.getElementById('mobile-nav-home');
 
             // Handle scroll to contact section
             navContact.addEventListener('click', (e) => {
-                if(homepageContent.classList.contains('hidden')) {
-                    showHomepage();
-                }
+                showHomepage();
                 setTimeout(() => {
                     document.getElementById('contact').scrollIntoView();
                 }, 100);
             });
             mobileNavContact.addEventListener('click', (e) => {
-                if(homepageContent.classList.contains('hidden')) {
-                    showHomepage();
-                }
+                showHomepage();
                 setTimeout(() => {
                     document.getElementById('contact').scrollIntoView();
                 }, 100);
             });
-
+            
             if (form) {
                 form.addEventListener('submit', async (e) => {
                     e.preventDefault();
