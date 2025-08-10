@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transpareo AG - Digitaler Produktpass</title>
+    <title id="page-title">Transpareo AG - Digitaler Produktpass</title>
 
     <!-- SEO Meta Tags - German -->
     <meta id="meta-description-de" name="description" content="Transpareo AG bietet eine sofort verfügbare Lösung für den Digitalen Produktpass (DPP) in der DACH-Region. Steigern Sie Transparenz, Vertrauen und nachhaltiges Wachstum.">
@@ -43,6 +43,7 @@
             font-family: 'Poppins', sans-serif;
             font-size: 27px;
         }
+        /* Responsive font sizes */
         h1 {
             font-size: 20px;
         }
@@ -79,11 +80,11 @@
     </style>
     
     <!-- JSON-LD Structured Data for SEO -->
-    <script id="json-ld" type="application/ld+json">
+    <script id="json-ld-de" type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Transpareo AG",
+          "name": "Transpareo",
           "url": "https://www.transpareo.com",
           "logo": "https://www.transpareo.com/logo.png",
           "contactPoint": {
@@ -100,6 +101,54 @@
           }
         }
     </script>
+    <script id="json-ld-faq-de" type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Was ist der Digitale Produktpass (DPP)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der Digitale Produktpass (DPP) ist ein digitaler Datensatz, der Informationen über ein Produkt enthält, wie z.B. Herkunft, Zusammensetzung, Reparaturfähigkeit und Recyclinganweisungen. Er soll die Transparenz in der Lieferkette erhöhen und die Kreislaufwirtschaft fördern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Welche Vorteile bringt der DPP für mein Unternehmen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der DPP ist eine Chance, nicht nur eine Last. Er ermöglicht Ihnen, das Vertrauen der Kunden zu stärken, die Markteinführung zu beschleunigen und Prozesse durch bessere Datentransparenz zu optimieren. Sie positionieren sich als Vorreiter in Sachen Nachhaltigkeit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Für welche Branchen ist der DPP relevant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der DPP betrifft eine Vielzahl von Branchen, von der Chemie-Industrie (Lacke, Farben) über elektronische Geräte (z.B. Batterien) bis hin zu Mode & Textilien."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wie kann Transpareo AG meinem Unternehmen helfen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Transpareo AG bietet eine sofort einsetzbare Lösung, die auf 12 Jahren Erfahrung mit QR-basierten Produkten basiert. Wir helfen Ihnen, die regulatorischen Anforderungen zu erfüllen und diese in einen strategischen Vorteil für Ihr Unternehmen zu verwandeln."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was sind die ersten Schritte zur Einführung eines DPP?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der erste Schritt ist eine unverbindliche Beratung, um Ihre spezifischen Bedürfnisse zu verstehen. Wir empfehlen ein unverbindliches Erstgespräch, um die Anforderungen zu klären und einen maßgeschneiderten Plan für die Implementierung der Lösung zu erstellen."
+              }
+            }
+          ]
+        }
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
     <!-- Header section -->
@@ -107,7 +156,7 @@
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <!-- Logo with colored syllables and specified font -->
             <a href="#" class="font-bold logo-font">
-                <span style="color: #007BFF;">Trans</span><span style="color: #28A745;">pa</span><span style="color: #7100FF;">reo</span><span class="text-gray-800"> ag</span>
+                <span style="color: #007BFF;">Trans</span><span style="color: #28A745;">pa</span><span style="color: #7100FF;">reo</span>
             </a>
             
             <!-- Language Switcher and Desktop Navigation Links -->
@@ -141,9 +190,9 @@
 
     <main class="content-bg">
         <!-- Main page content container - German -->
-        <div id="de-content">
+        <div id="homepage-content-de" class="">
             <!-- Hero section -->
-            <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
+            <section id="hero-section" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
                 <div class="container mx-auto text-center">
                     <h1 class="font-extrabold leading-tight mb-4 text-white text-4xl sm:text-5xl lg:text-6xl">Der Digitale Produktpass (DPP) ist die Zukunft. Transpareo AG bietet die Lösung, die heute funktioniert.</h1>
                     <p class="mb-8 max-w-2xl mx-auto text-base sm:text-lg">Wir helfen Unternehmen dabei, den DPP nicht als Last, sondern als Chance für Transparenz, Vertrauen und nachhaltiges Wachstum zu nutzen.</p>
@@ -152,7 +201,7 @@
             </section>
     
             <!-- Unique selling points section -->
-            <section id="features" class="py-20 px-4">
+            <section id="features-de" class="py-20 px-4">
                 <div class="container mx-auto">
                     <h2 class="font-bold text-center mb-12 text-3xl">Unser Alleinstellungsmerkmal</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -212,9 +261,9 @@
                         </svg>
                         Wird gesendet...
                     </div>
-                    <form id="contact-form" class="space-y-6">
+                    <form id="contact-form-de" class="space-y-6">
                         <div>
-                            <label for="name" class="block font-medium text-gray-700">Name</label>
+                            <label for="name-de" class="block font-medium text-gray-700">Name</label>
                             <input
                                 type="text"
                                 id="name-de"
@@ -224,7 +273,7 @@
                             />
                         </div>
                         <div>
-                            <label for="email" class="block font-medium text-gray-700">E-Mail</label>
+                            <label for="email-de" class="block font-medium text-gray-700">E-Mail</label>
                             <input
                                 type="email"
                                 id="email-de"
@@ -234,7 +283,7 @@
                             />
                         </div>
                         <div>
-                            <label for="message" class="block font-medium text-gray-700">Nachricht</label>
+                            <label for="message-de" class="block font-medium text-gray-700">Nachricht</label>
                             <textarea
                                 id="message-de"
                                 name="message"
@@ -258,7 +307,7 @@
             </section>
     
             <!-- QR code section -->
-            <section class="bg-gray-100 py-12 px-4 text-center">
+            <section id="qr-section-de" class="bg-gray-100 py-12 px-4 text-center">
                 <div class="container mx-auto">
                     <h2 class="font-bold mb-4 text-3xl">Unverbindliches Erstgespräch vereinbaren</h2>
                     <p class="mb-8 text-lg text-gray-600">Scannen Sie den QR-Code, um uns zu kontaktieren.</p>
@@ -273,78 +322,12 @@
             </section>
         </div>
 
-        <!-- FAQ page content container - German -->
-        <div id="faqs-content-de" class="hidden min-h-screen">
-            <section class="py-20 px-4">
-                <div class="container mx-auto max-w-3xl">
-                    <h2 class="font-bold text-center mb-12 text-3xl">FAQs zum Digitalen Produktpass (DPP)</h2>
-                    <div class="space-y-4">
-                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center">
-                                <h3 class="font-bold text-gray-800 text-sm">Was ist der Digitale Produktpass (DPP)?</h3>
-                                <span class="accordion-icon transform transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                                </span>
-                            </div>
-                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                                Der Digitale Produktpass (DPP) ist ein digitaler Datensatz, der Informationen über ein Produkt enthält, wie z.B. Herkunft, Zusammensetzung, Reparaturfähigkeit und Recyclinganweisungen. Er soll die Transparenz in der Lieferkette erhöhen und die Kreislaufwirtschaft fördern.
-                            </div>
-                        </div>
-                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center">
-                                <h3 class="font-bold text-gray-800 text-sm">Welche Vorteile bringt der DPP für mein Unternehmen?</h3>
-                                <span class="accordion-icon transform transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                                </span>
-                            </div>
-                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                                Der DPP ist eine Chance, nicht nur eine Last. Er ermöglicht Ihnen, das Vertrauen der Kunden zu stärken, die Markteinführung zu beschleunigen und Prozesse durch bessere Datentransparenz zu optimieren. Sie positionieren sich als Vorreiter in Sachen Nachhaltigkeit.
-                            </div>
-                        </div>
-                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center">
-                                <h3 class="font-bold text-gray-800 text-sm">Für welche Branchen ist der DPP relevant?</h3>
-                                <span class="accordion-icon transform transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                                </span>
-                            </div>
-                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                                Der DPP betrifft eine Vielzahl von Branchen, von der Chemie-Industrie (Lacke, Farben) über elektronische Geräte (z.B. Batterien) bis hin zu Mode & Textilien.
-                            </div>
-                        </div>
-                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center">
-                                <h3 class="font-bold text-gray-800 text-sm">Wie kann Transpareo AG meinem Unternehmen helfen?</h3>
-                                <span class="accordion-icon transform transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                                </span>
-                            </div>
-                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                                Transpareo AG bietet eine sofort einsetzbare Lösung, die auf 12 Jahren Erfahrung mit QR-basierten Produkten basiert. Wir helfen Ihnen, die regulatorischen Anforderungen zu erfüllen und diese in einen strategischen Vorteil für Ihr Unternehmen zu verwandeln.
-                            </div>
-                        </div>
-                        <div class="accordion-item bg-white p-6 rounded-lg shadow-md cursor-pointer">
-                            <div class="accordion-header flex justify-between items-center">
-                                <h3 class="font-bold text-gray-800 text-sm">Was sind die ersten Schritte zur Einführung eines DPP?</h3>
-                                <span class="accordion-icon transform transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                                </span>
-                            </div>
-                            <div class="accordion-content hidden mt-4 text-gray-600 text-xs">
-                                Der erste Schritt ist eine unverbindliche Beratung, um Ihre spezifischen Bedürfnisse zu verstehen. Wir empfehlen ein unverbindliches Erstgespräch, um die Anforderungen zu klären und einen maßgeschneiderten Plan für die Implementierung der Lösung zu erstellen.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        
         <!-- Main page content container - English (initially hidden) -->
-        <div id="en-content" class="hidden">
+        <div id="homepage-content-en" class="hidden">
             <!-- Hero section -->
-            <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
+            <section id="hero-section-en" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
                 <div class="container mx-auto text-center">
-                    <h1 class="font-extrabold leading-tight mb-4 text-white text-4xl sm:text-5xl lg:text-6xl">The Digital Product Passport (DPP) is the future. Transpareo AG offers the solution that works today.</h1>
+                    <h1 class="font-extrabold leading-tight mb-4 text-white text-4xl sm:text-5xl lg:text-6xl">The Digital Product Passport (DPP) is the future. Transpareo offers the solution that works today.</h1>
                     <p class="mb-8 max-w-2xl mx-auto text-base sm:text-lg">We help companies turn the DPP from a burden into an opportunity for transparency, trust, and sustainable growth.</p>
                     <a href="#contact" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 text-sm">Contact Us Now</a>
                 </div>
@@ -413,7 +396,7 @@
                     </div>
                     <form id="contact-form-en" class="space-y-6">
                         <div>
-                            <label for="name" class="block font-medium text-gray-700">Name</label>
+                            <label for="name-en" class="block font-medium text-gray-700">Name</label>
                             <input
                                 type="text"
                                 id="name-en"
@@ -423,7 +406,7 @@
                             />
                         </div>
                         <div>
-                            <label for="email" class="block font-medium text-gray-700">Email</label>
+                            <label for="email-en" class="block font-medium text-gray-700">Email</label>
                             <input
                                 type="email"
                                 id="email-en"
@@ -433,7 +416,7 @@
                             />
                         </div>
                         <div>
-                            <label for="message" class="block font-medium text-gray-700">Message</label>
+                            <label for="message-en" class="block font-medium text-gray-700">Message</label>
                             <textarea
                                 id="message-en"
                                 name="message"
@@ -457,7 +440,7 @@
             </section>
     
             <!-- QR code section -->
-            <section class="bg-gray-100 py-12 px-4 text-center">
+            <section id="qr-section-en" class="bg-gray-100 py-12 px-4 text-center">
                 <div class="container mx-auto">
                     <h2 class="font-bold mb-4 text-3xl">Arrange a non-binding consultation</h2>
                     <p class="mb-8 text-lg text-gray-600">Scan the QR code to contact us.</p>
@@ -610,7 +593,7 @@
         <div class="container mx-auto text-center md:text-left">
             <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-6">
                 <div class="mb-6 md:mb-0">
-                    <h4 class="text-xl font-bold text-white mb-2">Transpareo ag</h4>
+                    <h4 class="text-xl font-bold text-white mb-2">Transpareo</h4>
                     <p class="text-sm">Digitaler Produktpass und mehr.</p>
                 </div>
                 <div class="flex flex-col space-y-2">
@@ -633,19 +616,143 @@
                 </div>
             </div>
             <div class="text-center pt-6 border-t border-gray-700">
-                <p class="text-sm">© <span id="current-year"></span> <span id="footer-company-name">Transpareo ag</span>. Alle Rechte vorbehalten.</p>
+                <p class="text-sm">© <span id="current-year"></span> <span id="footer-company-name">Transpareo</span>. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center z-50 transform translate-y-full transition-transform duration-300">
+        <p id="cookie-text" class="text-xs">Wir verwenden Cookies, um die bestmögliche Erfahrung auf unserer Website zu gewährleisten. Durch die weitere Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
+        <button id="accept-cookies" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-full font-bold text-xs hover:bg-blue-700 transition duration-300">Akzeptieren</button>
+    </div>
+
     <script>
+        // Data for multi-language support
+        const contentData = {
+            de: {
+                title: "Transpareo AG - Digitaler Produktpass",
+                hero: {
+                    title: "Der Digitale Produktpass (DPP) ist die Zukunft. Transpareo bietet die Lösung, die heute funktioniert.",
+                    subtitle: "Wir helfen Unternehmen dabei, den DPP nicht als Last, sondern als Chance für Transparenz, Vertrauen und nachhaltiges Wachstum zu nutzen.",
+                    cta: "Jetzt Kontakt aufnehmen"
+                },
+                nav: {
+                    home: "Startseite",
+                    faqs: "FAQs",
+                    contact: "Kontakt aufnehmen"
+                },
+                features: {
+                    title: "Unser Alleinstellungsmerkmal",
+                    items: [
+                        { title: "Universalität", text: "Unsere Lösung ist nicht auf eine Branche beschränkt. Sie ist universell einsetzbar für den gesamten DACH-Raum und darüber hinaus." },
+                        { title: "Fundierte Erfahrung", text: "Seit 12 Jahren entwickeln wir erfolgreich QR-basierte Produktinformationslösungen. Mit über 100 zufriedenen Kunden haben wir die nötige Erfahrung." },
+                        { title: "Technologische Vorreiterrolle", text: "Wir nutzen innovative Technologien wie NFTs und KI-gestützte Online-Umfragen, um tiefe Einblicke in Kundenbedürfnisse zu gewinnen." },
+                        { title: "Zeit- und Investitionssicherheit", text: "Während andere noch entwickeln, bieten wir eine Lösung, die heute bereits funktioniert. Das gibt unseren Kunden die nötige Investitionssicherheit." },
+                        { title: "Schweizer Qualitätsbewusstsein", text: "Als Schweizer Unternehmen stehen wir für höchste Qualität, Präzision und Zuverlässigkeit." }
+                    ]
+                },
+                contact: {
+                    title: "Kontakt aufnehmen",
+                    success: "Ihre Anfrage wurde erfolgreich gesendet!",
+                    error: "Bitte füllen Sie alle Felder aus.",
+                    loading: "Wird gesendet...",
+                    send: "Nachricht senden",
+                    name: "Name",
+                    email: "E-Mail",
+                    message: "Nachricht"
+                },
+                faqs: {
+                    title: "FAQs zum Digitalen Produktpass (DPP)",
+                    questions: [
+                        { q: "Was ist der Digitale Produktpass (DPP)?", a: "Der Digitale Produktpass (DPP) ist ein digitaler Datensatz, der Informationen über ein Produkt enthält, wie z.B. Herkunft, Zusammensetzung, Reparaturfähigkeit und Recyclinganweisungen. Er soll die Transparenz in der Lieferkette erhöhen und die Kreislaufwirtschaft fördern." },
+                        { q: "Welche Vorteile bringt der DPP für mein Unternehmen?", a: "Der DPP ist eine Chance, nicht nur eine Last. Er ermöglicht Ihnen, das Vertrauen der Kunden zu stärken, die Markteinführung zu beschleunigen und Prozesse durch bessere Datentransparenz zu optimieren. Sie positionieren sich als Vorreiter in Sachen Nachhaltigkeit." },
+                        { q: "Für welche Branchen ist der DPP relevant?", a: "Der DPP betrifft eine Vielzahl von Branchen, von der Chemie-Industrie (Lacke, Farben) über elektronische Geräte (z.B. Batterien) bis hin zu Mode & Textilien." },
+                        { q: "Wie kann Transpareo meinem Unternehmen helfen?", a: "Transpareo bietet eine sofort einsetzbare Lösung, die auf 12 Jahren Erfahrung mit QR-basierten Produkten basiert. Wir helfen Ihnen, die regulatorischen Anforderungen zu erfüllen und diese in einen strategischen Vorteil für Ihr Unternehmen zu verwandeln." },
+                        { q: "Was sind die ersten Schritte zur Einführung eines DPP?", a: "Der erste Schritt ist eine unverbindliche Beratung, um Ihre spezifischen Bedürfnisse zu verstehen. Wir empfehlen ein unverbindliches Erstgespräch, um die Anforderungen zu klären und einen maßgeschneiderten Plan für die Implementierung der Lösung zu erstellen." }
+                    ]
+                },
+                qr: {
+                    title: "Unverbindliches Erstgespräch vereinbaren",
+                    subtitle: "Scannen Sie den QR-Code, um uns zu kontaktieren.",
+                    alt: "QR Code zur Transpareo Website"
+                },
+                footer: {
+                    companyName: "Transpareo",
+                    slogan: "Digitaler Produktpass und mehr.",
+                    copyright: "Alle Rechte vorbehalten."
+                },
+                cookies: {
+                    text: "Wir verwenden Cookies, um die bestmögliche Erfahrung auf unserer Website zu gewährleisten. Durch die weitere Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.",
+                    accept: "Akzeptieren"
+                }
+            },
+            en: {
+                title: "Transpareo - Digital Product Passport",
+                hero: {
+                    title: "The Digital Product Passport (DPP) is the future. Transpareo offers the solution that works today.",
+                    subtitle: "We help companies turn the DPP from a burden into an opportunity for transparency, trust, and sustainable growth.",
+                    cta: "Contact Us Now"
+                },
+                nav: {
+                    home: "Home",
+                    faqs: "FAQs",
+                    contact: "Contact"
+                },
+                features: {
+                    title: "Our Unique Selling Proposition",
+                    items: [
+                        { title: "Universality", text: "Our solution is not limited to a single industry. It is universally applicable for the entire DACH region and beyond." },
+                        { title: "Profound Experience", text: "For 12 years, we have successfully developed QR-based product information solutions. With over 100 satisfied clients, we have the necessary experience to master this challenge." },
+                        { title: "Technological Leadership", text: "We don't just focus on compliance. We use innovative technologies like NFTs and AI-powered online surveys to gain deep insights into customer needs and increase engagement." },
+                        { title: "Time and Investment Security", text: "While others are still developing, we offer a solution that works today. This gives our clients the necessary investment security in a dynamic market." },
+                        { title: "Swiss Quality Consciousness", text: "As a Swiss company, we stand for the highest quality, precision, and reliability." }
+                    ]
+                },
+                contact: {
+                    title: "Contact Us",
+                    success: "Your request has been sent successfully!",
+                    error: "Please fill out all fields.",
+                    loading: "Sending...",
+                    send: "Send Message",
+                    name: "Name",
+                    email: "Email",
+                    message: "Message"
+                },
+                faqs: {
+                    title: "FAQs about the Digital Product Passport (DPP)",
+                    questions: [
+                        { q: "What is the Digital Product Passport (DPP)?", a: "The Digital Product Passport (DPP) is a digital data record that contains information about a product, such as its origin, composition, repairability, and recycling instructions. It aims to increase transparency in the supply chain and promote the circular economy." },
+                        { q: "What are the benefits of the DPP for my company?", a: "The DPP is an opportunity, not just a burden. It allows you to strengthen customer trust, accelerate product launches, and optimize your processes through better data transparency. It's a chance to position yourself as a leader in sustainability." },
+                        { q: "Which industries are affected by the DPP?", a: "The DPP affects a wide range of industries, from the chemical industry (paints, dyes) and electronic devices (e.g., batteries) to fashion & textiles." },
+                        { q: "How can Transpareo help my company?", a: "Transpareo offers a ready-to-use solution based on 12 years of experience with QR-based products. We help you meet regulatory requirements and turn them into a strategic advantage for your company." },
+                        { q: "What are the first steps to implementing a DPP?", a: "The first step is a non-binding consultation to understand your specific needs. We recommend an initial consultation to clarify the requirements and create a tailored plan for implementing the solution that will make your company future-proof." }
+                    ]
+                },
+                qr: {
+                    title: "Arrange a non-binding consultation",
+                    subtitle: "Scan the QR code to contact us.",
+                    alt: "QR code to the Transpareo website"
+                },
+                footer: {
+                    companyName: "Transpareo",
+                    slogan: "Digital Product Passport and more.",
+                    copyright: "All rights reserved."
+                },
+                cookies: {
+                    text: "We use cookies to ensure the best possible experience on our website. By continuing to use our website, you agree to the use of cookies.",
+                    accept: "Accept"
+                }
+            }
+        };
+
         // Set current year dynamically in the footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
         
         // Mobile menu toggle logic
         document.getElementById('mobile-menu-button').addEventListener('click', () => {
             const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('open');
+            mobileMenu.classList.add('open');
         });
 
         document.getElementById('close-mobile-menu').addEventListener('click', () => {
@@ -655,96 +762,80 @@
 
         // Language toggle logic
         const langToggleBtn = document.getElementById('lang-toggle');
-        const deContent = document.getElementById('de-content');
-        const enContent = document.getElementById('en-content');
-        const deFaqsContent = document.getElementById('faqs-content-de');
-        const enFaqsContent = document.getElementById('faqs-content-en');
-        const langToggle = document.getElementById('lang-toggle');
+        let currentLang = 'de';
+
+        // Function to update all content based on the current language
+        function updateContent(lang) {
+            document.documentElement.lang = lang;
+            langToggleBtn.textContent = lang === 'de' ? 'EN' : 'DE';
+            
+            // Homepage content
+            document.querySelector('#homepage-content-de').classList.toggle('hidden', lang === 'en');
+            document.querySelector('#homepage-content-en').classList.toggle('hidden', lang === 'de');
+            
+            // FAQs content
+            document.querySelector('#faqs-content-de').classList.toggle('hidden', lang === 'en');
+            document.querySelector('#faqs-content-en').classList.toggle('hidden', lang === 'de');
+            
+            // Footer
+            document.getElementById('footer-company-name').textContent = contentData[lang].footer.companyName;
+            document.querySelector('footer p').textContent = contentData[lang].footer.slogan;
+            document.querySelector('footer .text-sm:last-of-type').textContent = `© ${new Date().getFullYear()} ${contentData[lang].footer.companyName}. ${contentData[lang].footer.copyright}`;
+
+            // Cookie banner
+            document.getElementById('cookie-text').textContent = contentData[lang].cookies.text;
+            document.getElementById('accept-cookies').textContent = contentData[lang].cookies.accept;
+
+            // Nav links
+            document.getElementById('nav-home').textContent = contentData[lang].nav.home;
+            document.getElementById('nav-faqs').textContent = contentData[lang].nav.faqs;
+            document.getElementById('mobile-nav-home').textContent = contentData[lang].nav.home;
+            document.getElementById('mobile-nav-faqs').textContent = contentData[lang].nav.faqs;
+
+            // Update form status messages
+            document.getElementById('form-status-success-de').textContent = contentData.de.contact.success;
+            document.getElementById('form-status-error-de').textContent = contentData.de.contact.error;
+            document.getElementById('form-status-loading-de').innerHTML = `<svg class="animate-spin h-5 w-5 mr-3 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>${contentData.de.contact.loading}`;
+            document.getElementById('form-status-success-en').textContent = contentData.en.contact.success;
+            document.getElementById('form-status-error-en').textContent = contentData.en.contact.error;
+            document.getElementById('form-status-loading-en').innerHTML = `<svg class="animate-spin h-5 w-5 mr-3 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>${contentData.en.contact.loading}`;
+        }
+        
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'de' ? 'en' : 'de';
+            updateContent(currentLang);
+        });
+
+        // "Sub-page" navigation logic
+        const homepageContentDe = document.getElementById('homepage-content-de');
+        const homepageContentEn = document.getElementById('homepage-content-en');
+        const faqsContentDe = document.getElementById('faqs-content-de');
+        const faqsContentEn = document.getElementById('faqs-content-en');
         const navHome = document.getElementById('nav-home');
         const navFaqs = document.getElementById('nav-faqs');
         const mobileNavHome = document.getElementById('mobile-nav-home');
         const mobileNavFaqs = document.getElementById('mobile-nav-faqs');
-        const pageTitle = document.querySelector('title');
 
-        let isEnglish = false;
-
-        function updateLangUI() {
-            if (isEnglish) {
-                document.documentElement.lang = 'en';
-                langToggle.textContent = 'DE';
-                // Update navigation text
-                navHome.textContent = 'Homepage';
-                navFaqs.textContent = 'FAQs';
-                mobileNavHome.textContent = 'Homepage';
-                mobileNavFaqs.textContent = 'FAQs';
-                pageTitle.textContent = 'Transpareo AG - Digital Product Passport';
-                // Show English content, hide German
-                deContent.classList.add('hidden');
-                enContent.classList.remove('hidden');
-                // Check which subpage is active and show corresponding language content
-                if (deFaqsContent.classList.contains('active-page')) {
-                    deFaqsContent.classList.remove('active-page');
-                    deFaqsContent.classList.add('hidden');
-                    enFaqsContent.classList.add('active-page');
-                    enFaqsContent.classList.remove('hidden');
-                } else {
-                    enFaqsContent.classList.add('hidden');
-                }
-            } else {
-                document.documentElement.lang = 'de';
-                langToggle.textContent = 'EN';
-                // Update navigation text
-                navHome.textContent = 'Startseite';
-                navFaqs.textContent = 'FAQs';
-                mobileNavHome.textContent = 'Startseite';
-                mobileNavFaqs.textContent = 'FAQs';
-                pageTitle.textContent = 'Transpareo AG - Digitaler Produktpass';
-                // Show German content, hide English
-                enContent.classList.add('hidden');
-                deContent.classList.remove('hidden');
-                // Check which subpage is active and show corresponding language content
-                if (enFaqsContent.classList.contains('active-page')) {
-                    enFaqsContent.classList.remove('active-page');
-                    enFaqsContent.classList.add('hidden');
-                    deFaqsContent.classList.add('active-page');
-                    deFaqsContent.classList.remove('hidden');
-                } else {
-                    deFaqsContent.classList.add('hidden');
-                }
-            }
-        }
-        
-        langToggleBtn.addEventListener('click', () => {
-            isEnglish = !isEnglish;
-            updateLangUI();
-        });
-
-
-        // "Sub-page" navigation logic
         function showHomepage() {
-            if (isEnglish) {
-                enContent.classList.remove('hidden');
-                enFaqsContent.classList.add('hidden');
+            if (currentLang === 'de') {
+                homepageContentDe.classList.remove('hidden');
+                faqsContentDe.classList.add('hidden');
             } else {
-                deContent.classList.remove('hidden');
-                deFaqsContent.classList.add('hidden');
+                homepageContentEn.classList.remove('hidden');
+                faqsContentEn.classList.add('hidden');
             }
-            homepageContent.classList.remove('hidden');
-            faqsContent.classList.add('hidden');
-            window.scrollTo(0, 0); // Scroll to top
+            window.scrollTo(0, 0);
         }
 
         function showFaqsPage() {
-            if (isEnglish) {
-                enFaqsContent.classList.remove('hidden');
-                enContent.classList.add('hidden');
+            if (currentLang === 'de') {
+                homepageContentDe.classList.add('hidden');
+                faqsContentDe.classList.remove('hidden');
             } else {
-                deFaqsContent.classList.remove('hidden');
-                deContent.classList.add('hidden');
+                homepageContentEn.classList.add('hidden');
+                faqsContentEn.classList.remove('hidden');
             }
-            homepageContent.classList.add('hidden');
-            faqsContent.classList.remove('hidden');
-            window.scrollTo(0, 0); // Scroll to top
+            window.scrollTo(0, 0);
         }
 
         navHome.addEventListener('click', (e) => {
@@ -765,33 +856,17 @@
             showFaqsPage();
             document.getElementById('mobile-menu').classList.remove('open');
         });
-        
-        // Dynamic footer content based on language
-        function updateFooter(isEnglish) {
-            const footerCompanyName = document.getElementById('footer-company-name');
-            footerCompanyName.textContent = isEnglish ? 'Transpareo ag' : 'Transpareo ag'; // Name remains the same
-            
-            const footerAddress = document.getElementById('footer-address');
-            footerAddress.textContent = isEnglish ? 'Transpareo AG, Grabenstrasse 15a, CH 6340 Baar/ZG, Switzerland' : 'Transpareo AG, Grabenstrasse 15a, CH 6340 Baar/ZG, Switzerland';
-            
-            // ... other footer content updates if needed
-        }
-        
-        // Initial setup
-        updateLangUI();
-        updateFooter(isEnglish);
 
         // Accordion functionality for FAQs
-        const accordionItems = document.querySelectorAll('.accordion-item');
-        accordionItems.forEach(item => {
-            const header = item.querySelector('.accordion-header');
-            const content = item.querySelector('.accordion-content');
-            const icon = item.querySelector('.accordion-icon');
-            header.addEventListener('click', () => {
+        document.body.addEventListener('click', (e) => {
+            if (e.target.closest('.accordion-header')) {
+                const item = e.target.closest('.accordion-item');
+                const content = item.querySelector('.accordion-content');
+                const icon = item.querySelector('.accordion-icon');
+                
                 const isOpen = content.classList.contains('active');
                 
-                // Close all other accordions
-                accordionItems.forEach(otherItem => {
+                document.querySelectorAll('.accordion-item').forEach(otherItem => {
                     if (otherItem !== item) {
                         otherItem.querySelector('.accordion-content').classList.remove('active');
                         otherItem.querySelector('.accordion-content').classList.add('hidden');
@@ -799,49 +874,34 @@
                     }
                 });
 
-                // Toggle current accordion
                 content.classList.toggle('hidden');
                 content.classList.toggle('active');
                 icon.classList.toggle('rotate-180');
-            });
+            }
         });
-
-        // Form submission logic to Gemini API
+        
+        // Form submission logic
         document.addEventListener('DOMContentLoaded', () => {
-            const form = document.getElementById('contact-form');
-            const successMessage = document.getElementById('form-status-success-de');
-            const errorMessage = document.getElementById('form-status-error-de');
-            const loadingMessage = document.getElementById('form-status-loading-de');
-            const submitButton = document.getElementById('submit-button-de');
-            const navContact = document.getElementById('nav-home');
-            const mobileNavContact = document.getElementById('mobile-nav-home');
+            const formDe = document.getElementById('contact-form-de');
+            const formEn = document.getElementById('contact-form-en');
 
-            // Handle scroll to contact section
-            navContact.addEventListener('click', (e) => {
-                showHomepage();
-                setTimeout(() => {
-                    document.getElementById('contact').scrollIntoView();
-                }, 100);
-            });
-            mobileNavContact.addEventListener('click', (e) => {
-                showHomepage();
-                setTimeout(() => {
-                    document.getElementById('contact').scrollIntoView();
-                }, 100);
-            });
-            
-            if (form) {
-                form.addEventListener('submit', async (e) => {
+            if (formDe) {
+                formDe.addEventListener('submit', async (e) => {
                     e.preventDefault();
+                    
+                    const successMessage = document.getElementById('form-status-success-de');
+                    const errorMessage = document.getElementById('form-status-error-de');
+                    const loadingMessage = document.getElementById('form-status-loading-de');
+                    const submitButton = document.getElementById('submit-button-de');
                     
                     successMessage.style.display = 'none';
                     errorMessage.style.display = 'none';
                     loadingMessage.style.display = 'block';
                     submitButton.disabled = true;
 
-                    const name = e.target.name.value;
-                    const email = e.target.email.value;
-                    const message = e.target.message.value;
+                    const name = document.getElementById('name-de').value;
+                    const email = document.getElementById('email-de').value;
+                    const message = document.getElementById('message-de').value;
                     
                     if (!name || !email || !message) {
                         loadingMessage.style.display = 'none';
@@ -869,7 +929,63 @@
                         
                         loadingMessage.style.display = 'none';
                         successMessage.style.display = 'block';
-                        form.reset();
+                        formDe.reset();
+                        
+                    } catch (error) {
+                        console.error('Simulated API call failed:', error);
+                        loadingMessage.style.display = 'none';
+                        errorMessage.style.display = 'block';
+                    } finally {
+                        submitButton.disabled = false;
+                    }
+                });
+            }
+
+            if (formEn) {
+                formEn.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    const successMessage = document.getElementById('form-status-success-en');
+                    const errorMessage = document.getElementById('form-status-error-en');
+                    const loadingMessage = document.getElementById('form-status-loading-en');
+                    const submitButton = document.getElementById('submit-button-en');
+                    
+                    successMessage.style.display = 'none';
+                    errorMessage.style.display = 'none';
+                    loadingMessage.style.display = 'block';
+                    submitButton.disabled = true;
+
+                    const name = document.getElementById('name-en').value;
+                    const email = document.getElementById('email-en').value;
+                    const message = document.getElementById('message-en').value;
+                    
+                    if (!name || !email || !message) {
+                        loadingMessage.style.display = 'none';
+                        errorMessage.style.display = 'block';
+                        submitButton.disabled = false;
+                        return;
+                    }
+
+                    try {
+                         let chatHistory = [];
+                         chatHistory.push({ role: "user", parts: [{ text: `Simulate processing a contact form submission with the following details: Name: ${name}, Email: ${email}, Message: ${message}. Respond with a simple acknowledgment message.` }] });
+                         const payload = { contents: chatHistory };
+                         const apiKey = ""
+                         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                         
+                         const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+                        
+                        const result = await response.json();
+                        
+                        await new Promise(resolve => setTimeout(resolve, 1500));
+                        
+                        loadingMessage.style.display = 'none';
+                        successMessage.style.display = 'block';
+                        formEn.reset();
                         
                     } catch (error) {
                         console.error('Simulated API call failed:', error);
@@ -881,6 +997,23 @@
                 });
             }
         });
+        
+        // Cookie banner logic
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptButton = document.getElementById('accept-cookies');
+        const acceptedCookie = localStorage.getItem('cookies-accepted');
+
+        if (!acceptedCookie) {
+            cookieBanner.classList.remove('translate-y-full');
+        }
+
+        acceptButton.addEventListener('click', () => {
+            localStorage.setItem('cookies-accepted', 'true');
+            cookieBanner.classList.add('translate-y-full');
+        });
+        
+        // Initial content load
+        updateContent(currentLang);
     </script>
 </body>
 </html>
